@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>Ikaros' new configurations (part 1) - Intended version</title>
+<link href="style/da_journal_chat.css" rel="stylesheet" type="text/css" />
+<link href="images/da_favicon.ico" rel="shortcut icon" />
+</head>
+
+<body>
+<div align="center"><a href="../misc.html">Back to my site</a> | <a href="http://alikimoko.deviantart.com/journal/Ikaros-new-configurations-part-1-512179973">Back to DeviantArt</a></div>
+<div class="seperator">&nbsp;</div>
+<div class="journal_content">
+	<h1 align="center">
+		Recordings from a development discussion between alikimoko and Ikaros:
+	</h1>
+	<div class="chat_window">
+	
+    	<div class="person_bind">
+			<div class="img_left"><img src="images/ikaros_chat/lightning.gif"></div>
+			<div class="alikimoko_chat">Ikaros.</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind" align="right">
+			<div class="img_right"><img src="images/ikaros_chat/ikaros_normal.png"></div>
+			<div class="ikaros_chat">Yes, master?</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind">
+			<div class="img_left"><img src="images/ikaros_chat/lightning.gif"></div>
+			<div class="alikimoko_chat">I noticed some small flaws in your speach algorithms.</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind" align="right">
+			<div class="img_right"><img src="images/ikaros_chat/ikaros_scan.png"></div>
+			<div class="ikaros_chat">*Running self check...*</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind" align="right">
+			<div class="img_right"><img src="images/ikaros_chat/ikaros_normal.png"></div>
+			<div class="ikaros_chat">You are right, master. Should I fix them right now?</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind">
+			<div class="img_left"><img src="images/ikaros_chat/lightning.gif"></div>
+			<div class="multi_chat_binder_left">
+				<div class="alikimoko_chat">No.</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="alikimoko_chat_extra">There are some other things I would like you to implement.</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="alikimoko_chat_extra">Here is a list:</div>
+			</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="file_send" align="center">
+			<div><b>&gt;alikimoko send a text file&lt;<br>
+			Open "update_wishlist.txt"?</b></div>
+			<div class="seperator">&nbsp;</div>
+			<div class="yesno_prompt">
+				<div class="selected">Yes</div><br>
+				<div class="unselected">No</div>
+			</div>
+		</div>
+		<div class="seperator">&nbsp;</div>
+		<div class="file_content">Things to change:<br>
+			<ul>
+				<li>Your avatar is probably rendered wrong. It looks like the wrong resizing algorithm was used.</li>
+				<li>At least one line has the tendancy to leave the text area.</li>
+				<li>Current customisation is a bit difficult. Can you make them more accessible?</li>
+				<li>Can you add the option to enable/disable the day monitor?</li>
+				<li>Extra options for the day monitor. Things like images or user input days.</li>
+			</ul>
+			Thank you.
+		</div>
+		<div class="seperator">&nbsp;</div>
+		<div class="person_bind" align="right">
+			<div class="img_right"><img src="images/ikaros_chat/ikaros_normal.png"></div>
+			<div class="ikaros_chat">Let me check for a moment.</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind" align="right">
+			<div class="img_right"><img src="images/ikaros_chat/ikaros_scan.png"></div>
+			<div class="multi_chat_binder_right">
+				<div class="ikaros_chat">*Reading original code...*</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">*Checking requirements for changes...*</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">*Applying requirements to code...*</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">[Re-usable code: ~20%]</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">! ERROR detected !</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">! Reason: Imposibilities using current code !</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">*Looking for alternative...*</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">*Alternative found!*</div>
+			</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind" align="right">
+			<div class="img_right"><img src="images/ikaros_chat/ikaros_normal.png"></div>
+			<div class="multi_chat_binder_right">
+				<div class="ikaros_chat">Master.</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">There are some problems:<br><br>
+				<div class="right_list_item">&lt;&lt;</div><div class="right_list_content">The images for the day monitor are missing.</div>
+				<div class="right_list_item">&lt;&lt;</div><div class="right_list_content">Some checks are reaching the maximum length and may start failing.</div>
+				<div class="right_list_item">&lt;&lt;</div><div class="right_list_content">Some things are (near) imposible using standard rainmeter .ini code.</div></div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">I suggest starting from scratch and using lua scripting instead.</div>
+				<div class="seperator">&nbsp;</div>
+				<div class="ikaros_chat_extra">Permission to activate the <acronym title="The 'Pandora' or 'Self-Evolution' program allowes the Angeloids to evolve themselves over time or by taking in other things. Up till now only Chaos used something that resembles it in the anime when eating the fish. It was, however, never named in the anime. The manga features it in detail, gives the history and its dangers.">PANDORA</acronym> system?</div>
+			</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind">
+			<div class="img_left"><img src="images/ikaros_chat/lightning.gif"></div>
+			<div class="alikimoko_chat">Go ahead.</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="person_bind" align="right">
+			<div class="img_right"><acronym title="Ikaros after her 2nd evolution."><img src="images/ikaros_chat/ikaros_PANDORA.png"></acronym></div>
+			<div class="ikaros_chat">&gt;&gt;INITIALIZING PANDORA SYSTEM&lt;&lt;</div>
+			<div class="seperator">&nbsp;</div>
+		</div>
+		
+		<div class="reconfiguration" align="center">
+			<div class="past">
+				&gt;&gt;PANDORA SYSTEM ACTIVE&lt;&lt;<br>
+				&gt;&gt;Learning lua&lt;&lt;<br>
+				&gt;&gt;Lua basics learned&lt;&lt;<br>
+				&gt;&gt;Reconfiguring&lt;&lt;
+			</div>
+			&lt;&lt;Progress&gt;&gt;<br>
+			&gt;New Identity - DONE&lt;
+			<div class="done">&nbsp;</div>
+			&gt;Relocating/Creating configuration options - 60%&lt;
+			<div class="progress_undone" align="left"><div class="progress_done" style="width:180px;">&nbsp;</div></div>
+			&gt;&gt;Creating new lines - 4/5&lt;&lt;<br>
+			&gt;Greeting - DONE&lt;
+			<div class="done">&nbsp;</div>
+			&gt;Date - DONE&lt;
+			<div class="done">&nbsp;</div>
+			&gt;Time - DONE&lt;
+			<div class="done">&nbsp;</div>
+			&gt;Ending - DONE&lt;
+			<div class="done">&nbsp;</div>
+			&gt;Day monitor - 15%&lt;
+			<div class="progress_undone" align="left"><div class="progress_done" style="width:45px;">&nbsp;</div></div>
+			&gt;Fetching special day monitor images - 0%&lt;
+			<div class="progress_undone">&nbsp;</div>
+			&gt;&gt;TOTAL - 55%&lt;&lt;
+			<div class="progress_undone" align="left"><div class="progress_done" style="width:165px;">&nbsp;</div></div>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
